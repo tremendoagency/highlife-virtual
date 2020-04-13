@@ -376,8 +376,8 @@
     iframe.src = hotspot.src;
     iframe.allowFullscreen = false;
     iframe.frameBorder = 0;
-    iframe.width = 560;
-    iframe.height = 315;
+    iframe.width = 1280;
+    iframe.height = 720;
 
     //iframe.classList.add('embedded-hotspot-icon');
 
