@@ -372,7 +372,12 @@
 
     // Create iframe.
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/a4YjKmsXyds?rel=0&amp;controls=0&amp;showinfo=0&amp';
+    iframe.src = hotspot.src;
+    iframe.allowFullscreen = false;
+    iframe.frameBorder = 0;
+    iframe.width = 560;
+    iframe.height = 315;
+
     //iframe.classList.add('embedded-hotspot-icon');
 
     // Set rotation transform.
