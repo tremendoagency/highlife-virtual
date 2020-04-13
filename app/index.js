@@ -19,10 +19,11 @@
 var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
 // Create source.
+var urlPrefix = "tiles";
 var source = Marzipano.ImageUrlSource.fromString(
   urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
   { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
-  
+
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([
   { tileSize: 256, size: 256, fallbackOnly: true },
