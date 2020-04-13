@@ -20,7 +20,7 @@ var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
 // Create source.
 var source = Marzipano.ImageUrlSource.fromString(
-  "main.jpg"
+  "https://github.com/tremendoagency/highlife-virtual/blob/master/btest/main.jpg"
 );
 
 // Create geometry.
