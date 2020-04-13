@@ -103,7 +103,7 @@
     // Create embedded hotspots.
     data.embeddedHotSpots.forEach(function(hotspot) {
       var element = createEmbeddedHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch }, { perspective: { radius: hotspot.radius, extraTransforms: "rotateX(5deg)" });
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch }, { perspective: { radius: hotspot.radius, extraTransforms: "rotateX(5deg)" }});
     });
 
     return {
