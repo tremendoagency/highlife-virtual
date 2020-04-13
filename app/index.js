@@ -100,6 +100,12 @@
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
 
+    // Create embedded hotspots.
+    data.embeddedHotSpots.forEach(function(hotspot) {
+      var element = createEmbeddedHotspotElement(hotspot);
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch }, { perspective: { radius: hotspot.radius, extraTransforms: "rotateX(5deg)" });
+    });
+
     return {
       data: data,
       scene: scene,
@@ -353,6 +359,34 @@
     // Prevent touch and scroll events from reaching the parent element.
     // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
+
+    return wrapper;
+  }
+
+  function createEmbeddedHotspotElement(hotspot) {
+
+    // Create wrapper element to hold icon and tooltip.
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('embedded-hotspot');
+
+    // Create iframe.
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/a4YjKmsXyds?rel=0&amp;controls=0&amp;showinfo=0&amp';
+    //iframe.classList.add('embedded-hotspot-icon');
+
+    // Set rotation transform.
+    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+    for (var i = 0; i < transformProperties.length; i++) {
+      var property = transformProperties[i];
+      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
+    }
+
+    // Prevent touch and scroll events from reaching the parent element.
+    // This prevents the view control logic from interfering with the hotspot.
+    stopTouchAndScrollEventPropagation(wrapper);
+
+    wrapper.appendChild(iframe);
 
     return wrapper;
   }
