@@ -16,9 +16,9 @@ var APP_DATA = {
       ],
       "faceSize": 320,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.08611203393498812,
+        "pitch": -0.1050136706926672,
+        "fov": 1.3264749465418482
       },
       "linkHotspots": [],
       "infoHotspots": [
@@ -31,8 +31,8 @@ var APP_DATA = {
       ],
       "embeddedHotSpots": [
         {
-          "yaw": -0.1457067243766943,
-          "pitch": -0.006392650344780648,
+          "yaw": -0.20422179703370524,
+          "pitch": -0.2513414185134053,
           "radius": 1640,
           "src": 'https://www.youtube.com/embed/_dHlzo0l-Zs'
         }
