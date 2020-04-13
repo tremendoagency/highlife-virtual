@@ -34,7 +34,7 @@ var APP_DATA = {
           "yaw": -0.1457067243766943,
           "pitch": -0.006392650344780648,
           "radius": 1640,
-          "src": 'https://www.youtube.com/embed/a4YjKmsXyds'
+          "src": 'https://www.youtube.com/embed/_dHlzo0l-Zs'
         }
       ]
     }
