@@ -379,7 +379,7 @@
     var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
     for (var i = 0; i < transformProperties.length; i++) {
       var property = transformProperties[i];
-      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
+      iframe.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
     }
 
     // Prevent touch and scroll events from reaching the parent element.
