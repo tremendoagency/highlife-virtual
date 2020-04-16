@@ -12,37 +12,70 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
         }
       ],
-      "faceSize": 320,
+      "faceSize": 1500,
       "initialViewParameters": {
-        "yaw": -0.08611203393498812,
-        "pitch": -0.1050136706926672,
-        "fov": 1.3264749465418482
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [],
       "infoHotspots": [
         {
-          "yaw": -0.1457067243766943,
-          "pitch": -0.006392650344780648,
-          "title": "Title",
+          "yaw": -0.029403488673125366,
+          "pitch": -0.055776435405626046,
+          "title": "Main Stage",
+          "text": "Text"
+        },
+        {
+          "yaw": -3.1252195779530645,
+          "pitch": -0.2324644897962891,
+          "title": "Cocktail Stage",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.581181933515758,
+          "pitch": -0.2782678862177157,
+          "title": "Food &amp; Drinks",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.6537812028496468,
+          "pitch": -0.17792343649880848,
+          "title": "Photobooth",
           "text": "Text"
         }
       ],
       "embeddedHotSpots": [
         {
-          "yaw": -0.20422179703370524,
-          "pitch": -0.2513414185134053,
+          "yaw": -0.029403488673125366,
+          "pitch": -0.055776435405626046,
           "radius": 1640,
           "src": 'https://player.twitch.tv/?channel=xxfirecoldxx'
-        }
+        },
+        {
+          "yaw": -3.1252195779530645,
+          "pitch": -0.2324644897962891,
+          "radius": 1640,
+          "src": 'https://player.twitch.tv/?channel=xxfirecoldxx'
+        },
       ]
     }
   ],
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": false,
-    "fullscreenButton": true
+    "autorotateEnabled": true,
+    "fullscreenButton": false,
+    "viewControlButtons": false
   }
 };
