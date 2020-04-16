@@ -60,7 +60,7 @@ var APP_DATA = {
           "yaw": -0.029403488673125366,
           "pitch": -0.055776435405626046,
           "radius": 1640,
-          "src": 'https://player.twitch.tv/?channel=xxfirecoldxx'
+          "src": 'https://www.youtube.com/embed/_dHlzo0l-Zs'
         },
         {
           "yaw": -3.1252195779530645,
