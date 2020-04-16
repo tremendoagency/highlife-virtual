@@ -24,7 +24,7 @@ html, body {
   overflow: hidden;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  background-color: #000;
+  background-color: #ccc;
   color: #fff;
 }
 
@@ -43,17 +43,28 @@ a, a:hover, a:active, a:visited {
 }
 
 #titleBar {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  right: 40px;
-  height: 40px;
-  text-align: center;
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#titleBar #menu a{
+  text-transform: uppercase;
+  padding: 0 15px;
 }
 
 .mobile #titleBar {
   height: 50px;
   right: 50px;
+}
+
+#titleBar img{
+  width: 35px;
+  height: 35px;
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
